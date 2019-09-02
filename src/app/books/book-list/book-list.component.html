@@ -1,0 +1,7 @@
+<h1>Book list</h1>
+<h2>Newspapers</h2>
+<div *ngFor="let n of newspapers">{{ n.name }}</div>
+<h2>Books</h2>
+<div *ngFor="let b of books">
+  <app-book [model]="b"></app-book>
+</div>
